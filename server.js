@@ -40,6 +40,11 @@ app.get('/about', (req, res) => {
             pageTitle : 'About Page'
         });
 });
+app.get('/test',(req, res) => {
+    res.render('test.hbs',{
+        pageDesc : 'Hi this is to check the heroku and git deployment and builidng the node applicaiton'
+    });
+});
 app.listen(port, () => {
     console.log(`server is up and running on port ${port}`);
 });
